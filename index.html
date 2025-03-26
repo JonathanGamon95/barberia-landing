@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SCROLL LIBRERY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+    <!-- ICON LIBRERY -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- TAILWIND -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/general-style-colors.css">
+    <link rel="stylesheet" href="./css/menu-mobile.css">
+
+    <link rel="icon" href="./src/img/logo/logo.ico">
+    <title>Urban Stryle</title>
+</head>
+
+<body>
+
+
+
+    <header class="HEADER
+    w-screen
+    h-[100px]
+    fixed
+    top-0
+    flex
+    place-content-between">
+        <div class="
+        w-[100px]
+        h-[100px]
+        flex items-center justify-center">
+            <img class="
+            object-contain" src="./src/img/logo/logo.png" alt="">
+        </div>
+
+        <nav class="
+        flex items-center justify-center gap-10
+        p-8
+        h-[100px]">
+            <div class="
+            items-center justify-center gap-10
+            hidden sm:flex">
+                <p id="NAV-HOME" class="NAV-OPTION">Inicio</p>
+                <p id="NAV-SERVICE" class="NAV-OPTION">Servicios</p>
+                <p id="NAV-PRICE" class="NAV-OPTION">Precios</p>
+                <p id="NAV-CONTACT" class="NAV-OPTION">Contacto</p>
+                <a href="./shop-booking.html" target="_blank">
+                    <button class="BUTTON-BOOKING
+                    px-8 py-2">Recervar Turno</button>
+                </a>
+            </div>
+
+
+            <!-- MENU MOBILE -->
+            <div class="menu-container">
+                <button id="MENU-MOBILE" class="BUTTON-BOOKING
+                sm:hidden
+                px-8
+                py-2" onclick="toggleMenu()"><i class="bi bi-list"></i></button>
+
+                <div class="menu" id="menu">
+                    <p id="NAV-HOME-MOBILE" class="NAV-OPTION">Inicio</p>
+                    <p id="NAV-SERVICE-MOBILE" class="NAV-OPTION">Servicios</p>
+                    <p id="NAV-PRICE-MOBILE" class="NAV-OPTION">Precios</p>
+                    <p id="NAV-CONTACT-MOBILE" class="NAV-OPTION">Contacto</p>
+                    <a href="./shop-booking.html" target="_blank">
+                        <button class="BUTTON-BOOKING
+                        px-8
+                        py-2">Pedir Turno</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <section class="HOME-SECTION
+    pt-[150px]
+    sm:min-h-screen
+    py-6">
+        <!-- TITTLE -->
+        <div data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="
+        w-screen sm:max-w-[800px]
+        mx-auto
+        flex items-center justify-center flex-col gap-4">
+            <h1 class="TITTLE
+            text-2xl sm:text-4xl
+            text-center">Urban Style, Tu corte Tu estilo</h1>
+            <p class="SUBTITTLE
+            ">Profecionales que te dejaran satisfecho</p>
+
+            <h1 class="px-8 py-2">©2025 - Jonathan Gamon</h1>
+        </div>
+
+        <!-- CONTAINER DESCRIPTIONS HOME-SECTION -->
+        <div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" class="
+        w-screen sm:max-w-[800px]
+        min-h-[300px]
+        mx-auto
+        flex flex-col items-center gap-4
+        sm:grid sm:grid-cols-2 sm:grid-rows-1">
+            <!-- DESCRIPTION IMG HOME-SECTION -->
+            <div class="
+            w-[90%] sm:w-[100%]
+            flex flex-col gap-4">
+                <h1 class="TITTLE
+                text-center sm:text-start">Barberia Urban Style</h1>
+                <h2 class="SUBTITTLE
+                text-center sm:text-start">Una nueva experiencia en cortes y afeitados de precision, ahora en tu ciudad
+                </h2>
+                <p class="
+                text-center sm:text-start">Te ofrecemos un espacio moderno y acogedor, con barberos expertos y atención
+                    al detalle. Desde cortes tradicionales hasta los más vanguardistas, garantizamos una experiencia
+                    única. ¡Ven y renueva tu look con nosotros!</p>
+            </div>
+
+            <!-- DESCRIPTION IMG HOME-SECTION -->
+            <!-- <img class="
+             rounded-2xl" src="./src/img/barbebero/Shutterstock_2302169201-1200x675.jpg" alt=""> -->
+            <video autoplay loop muted playsinline>
+                <source src="./src/video/istockphoto-1251555171-640_adpp_is.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+        </div>
+
+
+
+        <!-- SOCIAL NETWORK -->
+        <div class="
+         w-screen sm:max-w-[800px]
+         mx-auto
+         pt-[50px]">
+            <p data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000" class="TITTLE-SOCIAL-NETWORK
+            text-center sm:text-start">Visita nuestras redes sociales</p>
+
+            <div data-aos="fade-down" data-aos-delay="700" data-aos-duration="1000" class="
+            flex justify-center gap-4
+            sm:justify-start
+            pt-[10px]">
+                <a href="https://www.instagram.com/" target="_blank" class="CONT-ICON-SOCIAL-NETWORL
+                w-[30px] h-[30px]
+                flex items-center justify-center
+                rounded-lg">
+                    <i class="bi bi-instagram
+                    flex items-center justify-center"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" class="CONT-ICON-SOCIAL-NETWORL
+                w-[30px] h-[30px]
+                flex items-center justify-center
+                rounded-lg">
+                    <i class="bi bi-facebook
+                    flex items-center justify-center"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/" target="_blank" class="CONT-ICON-SOCIAL-NETWORL
+                w-[30px] h-[30px]
+                flex items-center justify-center
+                rounded-lg">
+                    <i class="bi bi-tiktok
+                    flex items-center justify-center"></i>
+                </a>
+            </div>
+
+            <!-- CONT-INFORMATION-BOX -->
+            <div class="
+            w-[90%] sm:w-[100%] sm:max-w-[800px]
+            mi-h-[250px] sm:h-[150px]
+            mx-auto
+            pt-[30px]
+            grid-cols-1 grid-rows-2 gap-4
+            grid sm:grid-cols-2 sm:grid-rows-1 sm:gap-20">
+                <div data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000" class="INFORMATION-BOX
+                flex items-start justify-center gap-2
+                rounded-xl
+                p-4">
+                    <i class="bi bi-award-fill
+                    text-4xl"></i>
+                    <div>
+                        <p class="
+                        sm:text-xl"><strong>Titulo con Certificado</strong></p>
+                        <p>Profecionales con los titulos mas prestigiosos</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000" class="INFORMATION-BOX
+                flex items-start justify-center gap-2
+                rounded-xl
+                p-4">
+                    <i class="bi bi-globe-americas
+                text-4xl"></i>
+                    <div>
+                        <p class="
+                        sm:text-xl"><strong>Actualizados</strong></p>
+                        <p>Todos los cortes Y estilos modernos actualizados a Disposicion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="SERVICES-SECTION" class="SERVICES-SECTION
+    sm:h-screen
+    pt-[90px] sm:pt-[30px]
+    flex items-center justify-center">
+        <div class="
+        w-screen sm:max-w-[800px]
+        flex flex-col items-center justify-center gap-10
+        sm:h-[800px]
+        sm:grid grid-cols-2 grid-rows-1 gap-20">
+            <div class="
+            flex flex-col gap-4">
+                <h1 data-aos="zoom-out-down" data-aos-duration="1000" class="TITTLE
+                text-center sm:text-start">Nuestros Servicios</h1>
+                <br>
+                <br>
+                <div class="
+                flex flex-col gap-10">
+                    <div data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000">
+                        <h1 class="TITTLE
+                        text-center sm:text-start">Cabello</h1>
+                        <br>
+                        <p class="SERVICE-TEXT-DESCRIPTION
+                        text-center sm:text-start">Desde los estilos clásicos hasta las últimas tendencias, nuestros
+                            barberos expertos
+                            personalizan cada corte según tu estilo y personalidad</p>
+                    </div>
+
+                    <div data-aos="zoom-out-down" data-aos-delay="400" data-aos-duration="1000">
+                        <h1 class="TITTLE
+                        text-center sm:text-start">Barba</h1>
+                        <br>
+                        <p class="SERVICE-TEXT-DESCRIPTION
+                        text-center sm:text-start">Perfilados precisos, afeitados completos o degradados modernos.
+                            Trabajamos para que tu barba
+                            luzca impecable y bien cuidada.</p>
+                    </div>
+
+                    <div data-aos="zoom-out-down" data-aos-delay="600" data-aos-duration="1000">
+                        <h1 class="TITTLE
+                        text-center sm:text-start">Pestañas</h1>
+                        <br>
+                        <p class="SERVICE-TEXT-DESCRIPTION
+                        text-center sm:text-start">Porque la mirada también cuenta. Realzamos tus pestañas para darles
+                            más volumen, longitud y
+                            curvatura, resaltando tu expresión natural.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="
+            flex flex-col gap-4">
+                <h3 data-aos="zoom-out-down" data-aos-duration="1000" class="TITTLE
+                text-center sm:text-start">Nuestro Trabajo</h3>
+                <br>
+                <div class="
+                flex flex-col gap-4">
+                    <div data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000">
+                        <p class="SERVICE-TEXT-DESCRIPTION
+                        text-center sm:text-start">En Barbería Urban Style, cada detalle está pensado para resaltar tu
+                            mejor versión. Ofrecemos
+                            una variedad de servicios diseñados para que salgas renovado y con estilo:</p>
+                    </div>
+
+                    <div data-aos="zoom-out-down" data-aos-delay="400" data-aos-duration="1000">
+                        <p class="SERVICE-TEXT-DESCRIPTION
+                        text-center sm:text-start">En cada servicio, garantizamos técnica, atención al detalle y un
+                            ambiente cómodo para que
+                            disfrutes la experiencia tanto como el resultado. ¿Te gustaría que le dé un toque más
+                            publicitario o directo para usarlo en redes sociales?</p>
+                    </div>
+                </div>
+
+                <img data-aos="zoom-out-down" data-aos-delay="600" data-aos-duration="1000" class="m-[20px] sm:m-0"
+                    src="./src/img/barbebero/istockphoto-1179617751-612x612.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- PRICE SECTION -->
+    <section id="PRICE-SECTION" class="PRICE-SECTION">
+        <div class="
+        w-[90%] sm:max-w-[800px]
+        mx-auto">
+            <h1 class="TITTLE 
+            text-center">Precios que te hacen lucir bien sin gastar de mas </h1>
+            <br>
+            <p class="
+                text-center">Veni y aprovecha nuestras rebajas especiales, no la desaproveches !</p>
+
+            <ul class="
+            flex flex-col items-center gap-4
+            sm:grid grid-cols-3 grid-rows-1
+            py-4">
+                <li class="PRICE-A
+                w-[100%] sm:max-w-[250px]
+                flex flex-col items-center justify-center gap-4
+                p-8
+                rounded-xl">
+                    <h1 class="TITTLE">Cabello</h1>
+                    <p><span class="
+                        text-5xl">20</span>$</p>
+
+                    <button class="PRICE-BUTTON-A
+                    py-2 px-8
+                    rounded-lg">Pedir</button>
+                </li>
+
+                <li class="PRICE-B
+                w-[100%] sm:max-w-[250px]
+                flex flex-col items-center justify-center gap-4
+                p-8
+                rounded-xl">
+                    <h1 class="TITTLE">Combo</h1>
+                    <p><span class="
+                        text-5xl">30</span>$</p>
+                        
+                        <div class="
+                        text-center">
+                            <p>Cabello</p>
+                            <p>Barba</p>
+                            <p>Pestañas</p>
+                        </div>
+
+                    <button class="PRICE-BUTTON-B
+                    py-2 px-8
+                    rounded-lg">Pedir</button>
+                </li>
+
+                <li class="PRICE-A
+                w-[100%] sm:max-w-[250px]
+                flex flex-col items-center justify-center gap-4
+                p-8
+                rounded-xl">
+                    <h1 class="TITTLE">Barba</h1>
+                    <p><span class="
+                        text-5xl">15</span>$</p>
+
+                    <button class="PRICE-BUTTON-A
+                    py-2 px-8
+                    rounded-lg">Pedir</button>
+                </li>
+            </ul>
+            <br>
+            <div class="PRICE-MORE-INFO">
+                <p class="
+                text-center sm:text-start">queres saber mas? <a href="">clic aca</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- CONTACT SECTION -->
+    <section id="CONTACT-SECTION" class="CONTACT-SECTION">
+        <div class="
+        w-screen sm:max-w-[800px]
+        mx-auto
+        py-[90px]">
+            <div class="
+            flex flex-col
+            sm:grid grid-cols-2 grid-rows-1 gap-20">
+                <img data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="
+                hidden sm:block" src="./src/img/background-img/photo-1621605815971-fbc98d665033.jpg" alt="">
+
+                <div data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="
+                    flex flex-col items-center justify-start gap-2
+                    sm:items-start">
+                    <h1 class="TITTLE">Estamos dispnibles los dias</h1>
+                    <br>
+                    <p>Lunes 9AM a 17pm</p>
+                    <p>Miercoles 9AM a 17pm</p>
+                    <p>Viernes 10AM a 16pm</p>
+                    <p>Sabado - Cerrado por Festival <i class="bi bi-exclamation-circle"></i></p>
+                </div>
+            </div>
+
+            <hr class="my-[50px]">
+
+            <ul class="
+            flex flex-col items-center justify-center gap-20
+            sm:flex-row sm:items-start 
+            list-none">
+                <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="w-[250px]">
+                    <h2 class="TITTLE">Llamanos <i class="bi bi-telephone-fill
+                        text-2xl"></i></h2>
+                    <br>
+                    <p>(555) 555 555</p>
+                </li>
+
+                <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="w-[250px]">
+                    <h2 class="TITTLE">Visitanos <i class="bi bi-geo-alt-fill
+                        text-2xl"></i></h2>
+                    <br>
+                    <p>A.inventada 1234, ciudad ficticia</p>
+                </li>
+
+                <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="
+                w-[250px]">
+                    <h2 class="TITTLE">Correo <i class="bi bi-envelope-fill
+                        text-2xl"></i></h2>
+                    <br>
+                    <p>BarberiaUrbanStyle@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="
+        w-screen sm:max-w-[800px]
+        min-h-[300px]
+        mx-auto
+        flex flex-col
+        sm:grid grid-cols-3 grid-rows-1">
+            <!-- logo and social network -->
+            <div class="
+            flex flex-col items-center justify-center
+            sm:items-start sm:justify-start">
+                <div class="
+                w-[100px]
+                h-[100px]
+                flex flex-col items-center justify-center">
+                    <img class="
+                    object-contain" src="./src/img/logo/logo.png" alt="">
+
+                    <div class="
+                    flex justify-center gap-4">
+                        <a href="https://www.instagram.com/" target="_blank" class="CONT-ICON-SOCIAL-NETWORL
+                        w-[30px] h-[30px]
+                        flex items-center justify-center
+                        rounded-lg">
+                            <i class="bi bi-instagram
+                            flex items-center justify-center"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/" target="_blank" class="CONT-ICON-SOCIAL-NETWORL
+                        w-[30px] h-[30px]
+                        flex items-center justify-center
+                        rounded-lg">
+                            <i class="bi bi-facebook
+                            flex items-center justify-center"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/" target="_blank" class="CONT-ICON-SOCIAL-NETWORL
+                        w-[30px] h-[30px]
+                        flex items-center justify-center
+                        rounded-lg">
+                            <i class="bi bi-tiktok
+                            flex items-center justify-center"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="
+            flex flex-col
+            text-center sm:text-start">
+                <br>
+                <h1><strong>Información Legal y Contacto</strong></h1>
+                <br>
+                <a class="py-[10px]" href="">Política de Privacidad</a>
+                <a class="py-[10px]" href="">Términos y Condiciones</a>
+            </div>
+
+            <div class="
+            flex flex-col
+            text-center sm:text-start">
+                <br>
+                <h1><strong>Conéctate y Aprende Más</strong></h1>
+                <br>
+                <a class="py-[10px]" href="">Testimonios de Clientes</a>
+                <a class="py-[10px]" href="">Consejos de Estilo</a>
+                <a class="py-[10px]" href="">Blog</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- WHATSAPP BUTTON -->
+    <div class="
+     fixed bottom-[20px] right-[20px] ">
+        <a href="https://wa.me/"><i class="bi bi-whatsapp
+        text-4xl"></i></a>
+    </div>
+
+
+
+    <!-- TAILWIND LIBRERY -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- SCROLL LIBRERY -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- SCRIPTS -->
+    <script src="./js/scroll-nav.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #09122C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #193fc9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input,
+        select,
+        button {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        select,
+        button {
+            width: 100%;
+        }
+
+        button {
+            background-color: #4caf50;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h4,
+        h2,
+        label,
+        button {
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Reserva tu turno</h2>
+        <h4>Dias habiles - Lun, Mier, Vier</h4>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="service">Servicio:</label>
+            <select id="service" name="service" required>
+                <option value="Corte de cabello">Corte de cabello</option>
+                <option value="Afeitado">Afeitado</option>
+                <option value="Corte y barba">Corte y barba (Combo)</option>
+                <option value="Tinte">Pestaña</option>
+            </select>
+
+            <button type="submit">Reservar turno</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const dateInput = document.getElementById("date");
+            const timeInput = document.getElementById("time");
+
+            // Configurar días disponibles (ejemplo: lunes a sábado)
+            const availableDays = [2, 4, 5, 6];
+            const today = new Date();
+            dateInput.min = today.toISOString().split("T")[0];
+
+            dateInput.addEventListener("change", () => {
+                const selectedDate = new Date(dateInput.value);
+                if (!availableDays.includes(selectedDate.getDay())) {
+                    alert("Ese día no está disponible. Por favor, elige otro.");
+                    dateInput.value = "";
+                }
+            });
+
+            // Configurar horario disponible (ejemplo: 9:00 a 17:00)
+            timeInput.addEventListener("input", () => {
+                const selectedTime = timeInput.value;
+                if (selectedTime < "09:00" || selectedTime > "18:00") {
+                    alert("La barbería solo atiende entre las 09:00 y las 18:00.");
+                    timeInput.value = "";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
