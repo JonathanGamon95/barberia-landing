@@ -22,6 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/general-style-colors.css">
     <link rel="stylesheet" href="./css/menu-mobile.css">
+    <link rel="stylesheet" href="./css/emergence-effect.css">
 
     <link rel="icon" href="./src/img/logo/logo.ico">
     <title>Urban Stryle</title>
@@ -59,7 +60,7 @@
                 <p id="NAV-CONTACT" class="NAV-OPTION">Contacto</p>
                 <a href="./shop-booking.html" target="_blank">
                     <button class="BUTTON-BOOKING
-                    px-8 py-2">Recervar Turno</button>
+                    px-8 py-2 rounded-lg">Recervar Turno</button>
                 </a>
             </div>
 
@@ -94,12 +95,13 @@
     sm:min-h-screen
     py-6">
         <!-- TITTLE -->
-        <div data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="
-        w-screen sm:max-w-[800px]
+        <div data-delay="0.5s" class="
+        fade-in-section
+        w-screen sm:max-w-[900px]
         mx-auto
         flex items-center justify-center flex-col gap-4">
             <h1 class="TITTLE
-            text-2xl sm:text-4xl
+            text-2xl sm:text-5xl
             text-center">Urban Style, Tu corte Tu estilo</h1>
             <p class="SUBTITTLE
             ">Profecionales que te dejaran satisfecho</p>
@@ -108,8 +110,9 @@
         </div>
 
         <!-- CONTAINER DESCRIPTIONS HOME-SECTION -->
-        <div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" class="
-        w-screen sm:max-w-[800px]
+        <div data-delay="0.5s" class="
+        fade-in-section
+        w-screen sm:max-w-[1000px]
         min-h-[300px]
         mx-auto
         flex flex-col items-center gap-4
@@ -123,7 +126,7 @@
                 <h2 class="SUBTITTLE
                 text-center sm:text-start">Una nueva experiencia en cortes y afeitados de precision, ahora en tu ciudad
                 </h2>
-                <p class="
+                <p class="TITTLE-RESUMEN
                 text-center sm:text-start">Te ofrecemos un espacio moderno y acogedor, con barberos expertos y atención
                     al detalle. Desde cortes tradicionales hasta los más vanguardistas, garantizamos una experiencia
                     única. ¡Ven y renueva tu look con nosotros!</p>
@@ -142,13 +145,15 @@
 
         <!-- SOCIAL NETWORK -->
         <div class="
-         w-screen sm:max-w-[800px]
+         w-screen sm:max-w-[1000px]
          mx-auto
          pt-[50px]">
-            <p data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000" class="TITTLE-SOCIAL-NETWORK
+            <p data-delay="0.1s" class="TITTLE-SOCIAL-NETWORK
+            fade-in-section
             text-center sm:text-start">Visita nuestras redes sociales</p>
 
-            <div data-aos="fade-down" data-aos-delay="700" data-aos-duration="1000" class="
+            <div data-delay="0.1s" class="
+            fade-in-section
             flex justify-center gap-4
             sm:justify-start
             pt-[10px]">
@@ -178,14 +183,15 @@
             </div>
 
             <!-- CONT-INFORMATION-BOX -->
-            <div class="
+            <div data-delay="0.1s" class="
+            fade-in-section
             w-[90%] sm:w-[100%] sm:max-w-[800px]
             mi-h-[250px] sm:h-[150px]
             mx-auto
             pt-[30px]
-            grid-cols-1 grid-rows-2 gap-4
-            grid sm:grid-cols-2 sm:grid-rows-1 sm:gap-20">
-                <div data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000" class="INFORMATION-BOX
+            grid grid-cols-1 grid-rows-2 gap-4
+            sm:grid-cols-2 sm:grid-rows-1 sm:gap-5">
+                <div class="INFORMATION-BOX
                 flex items-start justify-center gap-2
                 rounded-xl
                 p-4">
@@ -198,7 +204,7 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000" class="INFORMATION-BOX
+                <div class="INFORMATION-BOX
                 flex items-start justify-center gap-2
                 rounded-xl
                 p-4">
@@ -225,19 +231,19 @@
     pt-[90px] sm:pt-[30px]
     flex items-center justify-center">
         <div class="
-        w-screen sm:max-w-[800px]
-        flex flex-col items-center justify-center gap-10
-        sm:h-[800px]
+        w-screen sm:max-h-[800px] sm:max-w-[800px]
+        flex flex-col items-start justify-center gap-10
         sm:grid grid-cols-2 grid-rows-1 gap-20">
             <div class="
             flex flex-col gap-4">
-                <h1 data-aos="zoom-out-down" data-aos-duration="1000" class="TITTLE
-                text-center sm:text-start">Nuestros Servicios</h1>
+                <h1 data-delay="0.2s" class="TITTLE
+                fade-in-section
+                text-center sm:text-start text-2xl">Nuestros Servicios</h1>
                 <br>
                 <br>
                 <div class="
                 flex flex-col gap-10">
-                    <div data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000">
+                    <div data-delay="0.3s" class="SERVICE fade-in-section">
                         <h1 class="TITTLE
                         text-center sm:text-start">Cabello</h1>
                         <br>
@@ -247,7 +253,7 @@
                             personalizan cada corte según tu estilo y personalidad</p>
                     </div>
 
-                    <div data-aos="zoom-out-down" data-aos-delay="400" data-aos-duration="1000">
+                    <div data-delay="0.4s" class="SERVICE fade-in-section">
                         <h1 class="TITTLE
                         text-center sm:text-start">Barba</h1>
                         <br>
@@ -257,7 +263,7 @@
                             luzca impecable y bien cuidada.</p>
                     </div>
 
-                    <div data-aos="zoom-out-down" data-aos-delay="600" data-aos-duration="1000">
+                    <div data-delay="0.5s" class="SERVICE fade-in-section">
                         <h1 class="TITTLE
                         text-center sm:text-start">Pestañas</h1>
                         <br>
@@ -271,20 +277,21 @@
 
             <div class="
             flex flex-col gap-4">
-                <h3 data-aos="zoom-out-down" data-aos-duration="1000" class="TITTLE
-                text-center sm:text-start">Nuestro Trabajo</h3>
+                <h3 data-delay="0.2s" class="TITTLE
+                fade-in-section
+                text-center sm:text-start text-2xl">Nuestro Trabajo</h3>
                 <br>
                 <div class="
                 flex flex-col gap-4">
-                    <div data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000">
-                        <p class="SERVICE-TEXT-DESCRIPTION
+                    <div data-delay="0.3s" class="fade-in-section">
+                        <p class="
                         text-center sm:text-start">En Barbería Urban Style, cada detalle está pensado para resaltar tu
                             mejor versión. Ofrecemos
                             una variedad de servicios diseñados para que salgas renovado y con estilo:</p>
                     </div>
 
-                    <div data-aos="zoom-out-down" data-aos-delay="400" data-aos-duration="1000">
-                        <p class="SERVICE-TEXT-DESCRIPTION
+                    <div data-delay="0.3s" class="fade-in-section">
+                        <p class="
                         text-center sm:text-start">En cada servicio, garantizamos técnica, atención al detalle y un
                             ambiente cómodo para que
                             disfrutes la experiencia tanto como el resultado. ¿Te gustaría que le dé un toque más
@@ -292,7 +299,9 @@
                     </div>
                 </div>
 
-                <img data-aos="zoom-out-down" data-aos-delay="600" data-aos-duration="1000" class="m-[20px] sm:m-0"
+                <img data-delay="0.4s" class="
+                fade-in-section
+                m-[20px] sm:m-0"
                     src="./src/img/barbebero/istockphoto-1179617751-612x612.jpg" alt="">
             </div>
         </div>
@@ -323,7 +332,7 @@
                 flex flex-col items-center justify-center gap-4
                 p-8
                 rounded-xl">
-                    <h1 class="TITTLE">Cabello</h1>
+                    <h1 class="TITTLE">💇‍♂️ Cabello</h1>
                     <p><span class="
                         text-5xl">20</span>$</p>
 
@@ -337,7 +346,7 @@
                 flex flex-col items-center justify-center gap-4
                 p-8
                 rounded-xl">
-                    <h1 class="TITTLE">Combo</h1>
+                    <h1 class="TITTLE">🔥 Combo</h1>
                     <p><span class="
                         text-5xl">30</span>$</p>
                         
@@ -358,7 +367,7 @@
                 flex flex-col items-center justify-center gap-4
                 p-8
                 rounded-xl">
-                    <h1 class="TITTLE">Barba</h1>
+                    <h1 class="TITTLE">🧔 Barba</h1>
                     <p><span class="
                         text-5xl">15</span>$</p>
 
@@ -370,7 +379,7 @@
             <br>
             <div class="PRICE-MORE-INFO">
                 <p class="
-                text-center sm:text-start">queres saber mas? <a href="">clic aca</a></p>
+                text-center sm:text-start">queres saber mas? <a class="text-[#ff4c29]" href="">clic aca</a></p>
             </div>
         </div>
     </section>
@@ -415,14 +424,14 @@
                 <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="w-[250px]">
                     <h2 class="TITTLE">Llamanos <i class="bi bi-telephone-fill
                         text-2xl"></i></h2>
-                    <br>
+                    
                     <p>(555) 555 555</p>
                 </li>
 
                 <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="w-[250px]">
                     <h2 class="TITTLE">Visitanos <i class="bi bi-geo-alt-fill
                         text-2xl"></i></h2>
-                    <br>
+                    
                     <p>A.inventada 1234, ciudad ficticia</p>
                 </li>
 
@@ -430,7 +439,7 @@
                 w-[250px]">
                     <h2 class="TITTLE">Correo <i class="bi bi-envelope-fill
                         text-2xl"></i></h2>
-                    <br>
+                    
                     <p>BarberiaUrbanStyle@gmail.com</p>
                 </li>
             </ul>
@@ -447,7 +456,7 @@
     <footer>
         <div class="
         w-screen sm:max-w-[800px]
-        min-h-[300px]
+        min-h-[200px]
         mx-auto
         flex flex-col
         sm:grid grid-cols-3 grid-rows-1">
@@ -499,8 +508,8 @@
                 <br>
                 <h1><strong>Información Legal y Contacto</strong></h1>
                 <br>
-                <a class="py-[10px]" href="">Política de Privacidad</a>
-                <a class="py-[10px]" href="">Términos y Condiciones</a>
+                <a class="my-1" href="">Política de Privacidad</a>
+                <a class="my-1" href="">Términos y Condiciones</a>
             </div>
 
             <div class="
@@ -509,9 +518,9 @@
                 <br>
                 <h1><strong>Conéctate y Aprende Más</strong></h1>
                 <br>
-                <a class="py-[10px]" href="">Testimonios de Clientes</a>
-                <a class="py-[10px]" href="">Consejos de Estilo</a>
-                <a class="py-[10px]" href="">Blog</a>
+                <a class="my-1" href="">Testimonios de Clientes</a>
+                <a class="my-1" href="">Consejos de Estilo</a>
+                <a class="my-1" href="">Blog</a>
             </div>
         </div>
     </footer>
@@ -540,6 +549,7 @@
     <!-- SCRIPTS -->
     <script src="./js/scroll-nav.js"></script>
     <script src="./js/menu-mobile.js"></script>
+    <script src="./js/emergence-effect.js"></script>
 </body>
 
 </html>

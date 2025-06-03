@@ -46,10 +46,15 @@ img {
 }
 
 
-
+/* --------------------------------------------- */
 /* HOME-SECTION */
+/* --------------------------------------------- */
 .HOME-SECTION {
     overflow: hidden;
+    background-image: url(../src/img/background-img/fondo1.svg);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -63,6 +68,11 @@ img {
 
 .SUBTITTLE {
     color: #757575;
+}
+
+.SUBTITTLE,
+.TITTLE-RESUMEN {
+    font-size: 20px;
 }
 
 
@@ -84,8 +94,11 @@ img {
 
 
 .INFORMATION-BOX {
-    background-color: #0d1b46;
+    /* background-color: #A31D1D; */
     color: #dbdbdb;
+    background-color: #f0f8ff14;
+    border-radius: 5px;
+    user-select: none;
 }
 
 
@@ -109,14 +122,16 @@ img {
 
 
 
-
+/* --------------------------------------------- */
 /* SERVICE-SECTION */
+/* --------------------------------------------- */
+
 .SERVICES-SECTION {
-    background-image: url(../src/img/background-img/barberia-background.jpg);
+    background-image: url(../src/img/background-img/fondo2.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
- }
+}
 
 
 
@@ -127,12 +142,34 @@ img {
 
 
 
+.SERVICE {
+    background-color: #f0f8ff14;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.SERVICE-TEXT-DESCRIPTION {
+    font-size: 14px;
+}
+
+
+
+.SERVICE:hover {
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 10px 18px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 18px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 18px -3px rgba(0, 0, 0, 0.75);
+}
 
 
 
 
 
+/* --------------------------------------------- */
 /* PRICE-SECTION */
+/* --------------------------------------------- */
+
 .PRICE-SECTION {
     background-color: #161179;
     padding: 150px 0;
@@ -140,14 +177,14 @@ img {
 
 .PRICE-A,
 .PRICE-BUTTON-B {
-    background-color: #dbdbdb;
+    background-color: #FFF;
     color: #2C2C2C;
 }
 
 .PRICE-B,
 .PRICE-BUTTON-A {
     background-color: #2C2C2C;
-    color: #dbdbdb;
+    color: #FFF;
 }
 
 .PRICE-BUTTON-A,
@@ -165,31 +202,28 @@ img {
 
 
 
-.PRICE-MORE-INFO a {
-    color: #FFA725;
-}
 
 
 
-
-
-
-
-
+/* --------------------------------------------- */
 /* CONTACT-SECTION */
+/* --------------------------------------------- */
+
 .CONTACT-SECTION {
-    background-image: url(../src/img/background-img/bricks-design-stone-wall-wallpaper-preview.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+    /* background-image: url(../src/img/background-img/bricks-design-stone-wall-wallpaper-preview.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
 
 
 
-
+/* --------------------------------------------- */
 /* FOOTER */
+/* --------------------------------------------- */
+
 footer {
     background-color: #161179;
     color: #dbdbdb;
