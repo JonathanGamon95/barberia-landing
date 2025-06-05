@@ -1,3 +1,5 @@
+// animacion de aparecimiento
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -16,5 +18,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in-section').forEach(section => {
     observer.observe(section);
 });
-
-// animacion de aparecimiento

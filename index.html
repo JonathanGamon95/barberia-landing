@@ -22,7 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/general-style-colors.css">
     <link rel="stylesheet" href="./css/menu-mobile.css">
-    <link rel="stylesheet" href="./css/emergence-effect.css">
+    <link rel="stylesheet" href="./css/animations-effect.css">
 
     <link rel="icon" href="./src/img/logo/logo.ico">
     <title>Urban Stryle</title>
@@ -112,9 +112,9 @@
         <!-- CONTAINER DESCRIPTIONS HOME-SECTION -->
         <div data-delay="0.5s" class="
         fade-in-section
-        w-screen sm:max-w-[1000px]
+        w-full sm:max-w-[1000px]
         min-h-[300px]
-        mx-auto
+        mx-auto px-2
         flex flex-col items-center gap-4
         sm:grid sm:grid-cols-2 sm:grid-rows-1">
             <!-- DESCRIPTION IMG HOME-SECTION -->
@@ -145,7 +145,7 @@
 
         <!-- SOCIAL NETWORK -->
         <div class="
-         w-screen sm:max-w-[1000px]
+         w-full sm:max-w-[1000px]
          mx-auto
          pt-[50px]">
             <p data-delay="0.1s" class="TITTLE-SOCIAL-NETWORK
@@ -183,7 +183,7 @@
             </div>
 
             <!-- CONT-INFORMATION-BOX -->
-            <div data-delay="0.1s" class="
+            <div data-delay="0.2s" class="
             fade-in-section
             w-[90%] sm:w-[100%] sm:max-w-[800px]
             mi-h-[250px] sm:h-[150px]
@@ -231,12 +231,13 @@
     pt-[90px] sm:pt-[30px]
     flex items-center justify-center">
         <div class="
-        w-screen sm:max-h-[800px] sm:max-w-[800px]
+        w-full sm:max-h-[800px] sm:max-w-[800px]
+        px-2
         flex flex-col items-start justify-center gap-10
         sm:grid grid-cols-2 grid-rows-1 gap-20">
             <div class="
             flex flex-col gap-4">
-                <h1 data-delay="0.2s" class="TITTLE
+                <h1 data-delay="0.3s" class="TITTLE
                 fade-in-section
                 text-center sm:text-start text-2xl">Nuestros Servicios</h1>
                 <br>
@@ -244,8 +245,11 @@
                 <div class="
                 flex flex-col gap-10">
                     <div data-delay="0.3s" class="SERVICE fade-in-section">
-                        <h1 class="TITTLE
-                        text-center sm:text-start">Cabello</h1>
+                        <div class="flex justify-between">
+                            <h1 class="TITTLE
+                            text-center sm:text-start">Cabello</h1>
+                            <img class="w-[35px]" src="./src/img/logo/31458.png" alt="logo-service">
+                        </div>
                         <br>
                         <p class="SERVICE-TEXT-DESCRIPTION
                         text-center sm:text-start">Desde los estilos clásicos hasta las últimas tendencias, nuestros
@@ -253,9 +257,12 @@
                             personalizan cada corte según tu estilo y personalidad</p>
                     </div>
 
-                    <div data-delay="0.4s" class="SERVICE fade-in-section">
-                        <h1 class="TITTLE
-                        text-center sm:text-start">Barba</h1>
+                    <div data-delay="0.3s" class="SERVICE fade-in-section">
+                        <div class="flex justify-between">
+                            <h1 class="TITTLE
+                            text-center sm:text-start">Barba</h1>
+                            <img class="w-[35px]" src="./src/img/logo/4397806.png" alt="logo-service">
+                        </div>
                         <br>
                         <p class="SERVICE-TEXT-DESCRIPTION
                         text-center sm:text-start">Perfilados precisos, afeitados completos o degradados modernos.
@@ -263,9 +270,12 @@
                             luzca impecable y bien cuidada.</p>
                     </div>
 
-                    <div data-delay="0.5s" class="SERVICE fade-in-section">
-                        <h1 class="TITTLE
-                        text-center sm:text-start">Pestañas</h1>
+                    <div data-delay="0.3s" class="SERVICE fade-in-section">
+                        <div class="flex justify-between">
+                            <h1 class="TITTLE
+                            text-center sm:text-start">Pestañas</h1>
+                            <img class="w-[35px]" src="./src/img/logo/7215276.png" alt="logo-service">
+                        </div>
                         <br>
                         <p class="SERVICE-TEXT-DESCRIPTION
                         text-center sm:text-start">Porque la mirada también cuenta. Realzamos tus pestañas para darles
@@ -277,9 +287,10 @@
 
             <div class="
             flex flex-col gap-4">
-                <h3 data-delay="0.2s" class="TITTLE
+                <h3 data-delay="0.3s" class="TITTLE
                 fade-in-section
                 text-center sm:text-start text-2xl">Nuestro Trabajo</h3>
+                <br>
                 <br>
                 <div class="
                 flex flex-col gap-4">
@@ -299,10 +310,9 @@
                     </div>
                 </div>
 
-                <img data-delay="0.4s" class="
+                <img data-delay="0.3s" class="
                 fade-in-section
-                m-[20px] sm:m-0"
-                    src="./src/img/barbebero/istockphoto-1179617751-612x612.jpg" alt="">
+                m-[20px] sm:m-0" src="./src/img/barbebero/istockphoto-1179617751-612x612.jpg" alt="">
             </div>
         </div>
     </section>
@@ -349,13 +359,13 @@
                     <h1 class="TITTLE">🔥 Combo</h1>
                     <p><span class="
                         text-5xl">30</span>$</p>
-                        
-                        <div class="
+
+                    <div class="
                         text-center">
-                            <p>Cabello</p>
-                            <p>Barba</p>
-                            <p>Pestañas</p>
-                        </div>
+                        <p>Cabello</p>
+                        <p>Barba</p>
+                        <p>Pestañas</p>
+                    </div>
 
                     <button class="PRICE-BUTTON-B
                     py-2 px-8
@@ -400,12 +410,14 @@
             <div class="
             flex flex-col
             sm:grid grid-cols-2 grid-rows-1 gap-20">
-                <img data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="
+                <img data-delay="0.3s" class="
+                fade-in-section
                 hidden sm:block" src="./src/img/background-img/photo-1621605815971-fbc98d665033.jpg" alt="">
 
-                <div data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="
-                    flex flex-col items-center justify-start gap-2
-                    sm:items-start">
+                <div data-delay="0.3s" class="
+                fade-in-section
+                flex flex-col items-center justify-start gap-2
+                sm:items-start">
                     <h1 class="TITTLE">Estamos dispnibles los dias</h1>
                     <br>
                     <p>Lunes 9AM a 17pm</p>
@@ -421,25 +433,30 @@
             flex flex-col items-center justify-center gap-20
             sm:flex-row sm:items-start 
             list-none">
-                <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="w-[250px]">
+                <li data-delay="0.3s" class="
+                fade-in-section
+                w-[250px]">
                     <h2 class="TITTLE">Llamanos <i class="bi bi-telephone-fill
                         text-2xl"></i></h2>
-                    
+
                     <p>(555) 555 555</p>
                 </li>
 
-                <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="w-[250px]">
+                <li data-delay="0.3s" class="
+                fade-in-section
+                w-[250px]">
                     <h2 class="TITTLE">Visitanos <i class="bi bi-geo-alt-fill
                         text-2xl"></i></h2>
-                    
+
                     <p>A.inventada 1234, ciudad ficticia</p>
                 </li>
 
-                <li data-aos="zoom-out-down" data-aos-delay="200" data-aos-duration="1000" class="
+                <li data-delay="0.3s" class="
+                fade-in-section
                 w-[250px]">
                     <h2 class="TITTLE">Correo <i class="bi bi-envelope-fill
                         text-2xl"></i></h2>
-                    
+
                     <p>BarberiaUrbanStyle@gmail.com</p>
                 </li>
             </ul>

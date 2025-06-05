@@ -1,0 +1,36 @@
+/* animacion de aparecimiento */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+/* ANIMATION FLOAT */
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+ /* {
+  animation: flotar 3s ease-in-out infinite;
+} */
