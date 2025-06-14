@@ -24,7 +24,7 @@ img {
 
 /* HEADER */
 .HEADER {
-    background-color: #01155e42;
+    /* background-color: #01155e42; */
     z-index: 3;
 
     --tw-backdrop-blur: blur(4px);
@@ -75,6 +75,19 @@ img {
     color: aliceblue;
 }
 
+
+
+.BUTTOM-VIDEO {
+    cursor: pointer;
+    
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: #578FCA;
+}
+
+.BUTTOM-VIDEO:hover {
+    background-color: #578fcabb;
+}
 
 
 
@@ -151,6 +164,17 @@ img {
 
 
 
+.BARBER-BOX {
+    background-color: #e4efe757;
+}
+
+
+
+
+
+
+
+
 
 
 /* --------------------------------------------- */
@@ -159,7 +183,7 @@ img {
 
 .PRICE-SECTION {
     background-color: #161179;
-    padding: 150px 0;
+    padding: 180px 0;
 }
 
 .PRICE-A,
