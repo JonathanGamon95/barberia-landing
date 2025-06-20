@@ -34,23 +34,25 @@
 
     <header class="HEADER
     w-screen
-    h-[100px]
+    h-[80px]
     fixed
     top-0
     flex
     place-content-between">
         <div class="
         w-[100px]
-        h-[100px]
+        h-[100%]
         flex items-center justify-center">
-            <img class="
-            object-contain" src="./src/img/logo/logo.png" alt="">
+            <img class="ICON-PAGE
+            h-[90%]
+            p-1
+            object-contain" src="./src/img/logo/c3ed09a3-ab68-4191-bf70-6faca1093ae82a.png" alt="">
         </div>
 
         <nav class="
         flex items-center justify-center gap-10
         p-8
-        h-[100px]">
+        h-[100%]">
             <div class="
             items-center justify-center gap-10
             hidden sm:flex">
@@ -147,19 +149,14 @@
                 transform rotate-45 sm:scale-150
                 h-full" src="./src/img/background-img/438923.png" alt="icono-pagina">
             </div>
-
-            <!-- <video autoplay loop muted playsinline>
-                <source src="./src/video/istockphoto-1251555171-640_adpp_is.mp4" type="video/mp4">
-                Tu navegador no soporta el formato de video.
-            </video> -->
         </div>
 
 
 
         <!-- SOCIAL NETWORK -->
         <div class="
-         w-full sm:max-w-[1000px]
-         mx-auto">
+        w-full sm:max-w-[1000px]
+        mx-auto px-2">
             <p data-delay="0.1s" class="TITTLE-SOCIAL-NETWORK
             fade-in-section
             text-center sm:text-start">Visita nuestras redes sociales</p>
@@ -328,14 +325,14 @@
                     <img src="./src/img/barbebero/istockphoto-1179617751-612x612.jpg" alt="img-barbero">
 
                     <div class="BARBER-BOX
-                    flex items-center gap-2
-                    absolute bottom-0 right-5
+                    flex items-center justify-center gap-2
+                    relative bottom-[-10px] sm:absolute sm:bottom-0 sm:right-5 
                     m-2 p-2
                     rounded-lg">
                         <div class="
                         w-[30px]"><img class="w-full" src="./src/img/logo/1ee05a56-1d49-46c1-b5cd-000ef26a9502.png"
                                 alt=""></div>
-                        <h1>Jonathan Barbero especializado</h1>
+                        <h1>Jonathan +5 años de exp</h1>
                     </div>
                 </div>
             </div>
@@ -351,7 +348,7 @@
     <section id="PRICE-SECTION" class="PRICE-SECTION">
         <div class="
         w-[90%] sm:max-w-[800px]
-        mx-auto">
+        mx-auto py-[100px]">
             <h1 class="TITTLE 
             text-center">Precios que te hacen lucir bien sin gastar de mas <span class="text-4xl">💸</span></h1>
             <br>
@@ -427,7 +424,8 @@
 
 
     <!-- CONTACT SECTION -->
-    <section id="CONTACT-SECTION" class="CONTACT-SECTION">
+    <section id="CONTACT-SECTION" class="CONTACT-SECTION
+    sm:mt-[200px]">
         <div class="
         w-screen sm:max-w-[800px]
         mx-auto

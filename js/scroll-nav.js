@@ -26,7 +26,7 @@ const scrollBoton = (elemento) => {
 
 
 
-// elemento centrado
+// scroll centrado
 const scrollCenter = (elemento) => {
     const target = document.querySelector(elemento);
     if (target) {
@@ -45,7 +45,25 @@ const scrollCenter = (elemento) => {
 };
 
 
-// inicio
+
+// scroll parte superior
+const scrollToTopOfElement = (elemento) => {
+    const target = document.querySelector(elemento);
+    if (target) {
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth' // desplazamiento suave
+        });
+    }
+};
+
+
+
+
+
+// scroll inicio
 const scrollInicio = () => {
     window.scrollTo({
         top: 0, // Desplazarse al principio de la página
@@ -61,6 +79,6 @@ NAV_CONTACT.addEventListener('click', () => {scrollCenter('#CONTACT-SECTION');})
 
 // MOBILE
 NAV_HOME_MOBILE.addEventListener('click', () => {scrollInicio();});
-NAV_SERVICE_MOBILE.addEventListener("click", () => {scrollBoton('#SERVICES-SECTION');});
-NAV_PRICE_MOBILE.addEventListener('click', () => {scrollCenter('#PRICE-SECTION');});
-NAV_CONTACT_MOBILE.addEventListener('click', () => {scrollCenter('#CONTACT-SECTION');});
+NAV_SERVICE_MOBILE.addEventListener("click", () => {scrollToTopOfElement('#SERVICES-SECTION');});
+NAV_PRICE_MOBILE.addEventListener('click', () => {scrollToTopOfElement('#PRICE-SECTION');});
+NAV_CONTACT_MOBILE.addEventListener('click', () => {scrollToTopOfElement('#CONTACT-SECTION');});
