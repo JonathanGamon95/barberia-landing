@@ -98,7 +98,7 @@ img {
 
 .BUTTOM-VIDEO {
     cursor: pointer;
-    
+
     border-radius: 5px;
     transition: 0.5s;
     background-color: #578FCA;
@@ -246,6 +246,14 @@ img {
 }
 
 
+.CONTACT-INFO {
+    color: #dbdbdb;
+    background-color: #f0f8ff14;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
 
 
 
@@ -256,4 +264,14 @@ img {
 footer {
     background-color: #161179;
     color: #dbdbdb;
+}
+
+
+
+
+
+.WHATSAPP-BUTTON {
+    background-color: #1ebd58;
+    border-radius: 5px;
+    padding: 5px 2px;
 }
