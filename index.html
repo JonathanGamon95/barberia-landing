@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/general-style-colors.css">
     <link rel="stylesheet" href="./css/menu-mobile.css">
     <link rel="stylesheet" href="./css/animations-effect.css">
+    <link rel="stylesheet" href="./css/modal-style.css">
 
     <link rel="icon" href="./src/img/logo/logo.ico">
     <title>Urban Stryle</title>
@@ -134,7 +135,7 @@
                     al detalle. Desde cortes tradicionales hasta los más vanguardistas, garantizamos una experiencia
                     única. ¡Ven y renueva tu look con nosotros!</p>
 
-                    <button class="BUTTOM-VIDEO
+                    <button id="BUTTOM-VIDEO" class="BUTTOM-VIDEO
                     w-[150px]
                     mx-auto sm:mx-0
                     flex items-center justify-center gap-2"><i class="text-2xl bi bi-play-btn-fill"></i> Nuestro Salon </button>
@@ -437,17 +438,6 @@
                 fade-in-section
                 hidden sm:block" src="./src/img/background-img/photo-1621605815971-fbc98d665033.jpg" alt="">
 
-                <!-- <div data-delay="0.3s" class="
-                fade-in-section
-                flex flex-col items-center justify-start gap-2
-                sm:items-start">
-                    <h1 class="TITTLE">Estamos dispnibles los dias</h1>
-                    <br>
-                    <p>Lunes 9AM a 17pm</p>
-                    <p>Miercoles 9AM a 17pm</p>
-                    <p>Viernes 10AM a 16pm</p>
-                    <p>Sabado - Cerrado por Festival <i class="bi bi-exclamation-circle"></i></p>
-                </div> -->
 
                 <div data-delay="0.3s" class="
                 fade-in-section
@@ -585,9 +575,23 @@
 
     <!-- WHATSAPP BUTTON -->
     <div class="WHATSAPP-BUTTON
-     fixed bottom-[20px] right-[20px] ">
+    fixed bottom-[20px] right-[20px] ">
         <a href="https://wa.me/"><i class="bi bi-whatsapp
         text-4xl p-2"></i></a>
+    </div>
+
+
+<!-- MODAL VIDEO -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <!-- <span class="close" id="closeModal">&times;</span> -->
+            <button class="close" id="closeModal"><i class="bi bi-x-square-fill"></i></button>
+            <video id="videoElement" src="./src/video/istockphoto-1251555171-640_adpp_is.mp4"
+                controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
     </div>
 
 
@@ -603,6 +607,7 @@
     <script src="./js/scroll-nav.js"></script>
     <script src="./js/menu-mobile.js"></script>
     <script src="./js/emergence-effect.js"></script>
+    <script src="./js/modal-script.js"></script>
 </body>
 
 </html>
