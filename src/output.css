@@ -18,6 +18,7 @@
     --text-5xl--line-height: 1;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -353,6 +354,9 @@
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
+  .m-3 {
+    margin: calc(var(--spacing) * 3);
+  }
   .m-\[20px\] {
     margin: 20px;
   }
@@ -367,6 +371,12 @@
   }
   .my-\[50px\] {
     margin-block: 50px;
+  }
+  .my-auto {
+    margin-block: auto;
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
   }
   .box-border {
     box-sizing: border-box;
@@ -470,6 +480,9 @@
   .h-\[100px\] {
     height: 100px;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -491,6 +504,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -502,9 +518,6 @@
   }
   .w-\[90\%\] {
     width: 90%;
-  }
-  .w-\[100\%\] {
-    width: 100%;
   }
   .w-\[100px\] {
     width: 100px;
@@ -775,6 +788,9 @@
   .grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
+  .grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
   .grid-rows-none {
     grid-template-rows: none;
   }
@@ -1031,6 +1047,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -1153,6 +1172,9 @@
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#09122C\] {
+    background-color: #09122C;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1344,20 +1366,23 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -1367,6 +1392,9 @@
   }
   .py-\[100px\] {
     padding-block: 100px;
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
   }
   .pt-\[10px\] {
     padding-top: 10px;
@@ -1379,6 +1407,15 @@
   }
   .pt-\[110px\] {
     padding-top: 110px;
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
@@ -1433,6 +1470,13 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[15px\] {
+    font-size: 15px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1510,9 +1554,6 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
-  }
-  .text-\[\#ff4c29\] {
-    color: #ff4c29;
   }
   .capitalize {
     text-transform: capitalize;
@@ -2002,9 +2043,24 @@
       display: none;
     }
   }
+  .sm\:h-\[60\%\] {
+    @media (width >= 40rem) {
+      height: 60%;
+    }
+  }
+  .sm\:h-\[80\%\] {
+    @media (width >= 40rem) {
+      height: 80%;
+    }
+  }
   .sm\:h-\[150px\] {
     @media (width >= 40rem) {
       height: 150px;
+    }
+  }
+  .sm\:h-\[500px\] {
+    @media (width >= 40rem) {
+      height: 500px;
     }
   }
   .sm\:h-screen {
@@ -2030,11 +2086,6 @@
   .sm\:w-\[100\%\] {
     @media (width >= 40rem) {
       width: 100%;
-    }
-  }
-  .sm\:max-w-\[250px\] {
-    @media (width >= 40rem) {
-      max-width: 250px;
     }
   }
   .sm\:max-w-\[800px\] {
@@ -2063,6 +2114,11 @@
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:grid-cols-3 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .sm\:grid-rows-1 {

@@ -201,7 +201,12 @@ img {
 /* --------------------------------------------- */
 
 .PRICE-SECTION {
-    background-color: #161179;
+    /* background-color: #161179; */
+    background-color: #0d1b2a;
+}
+
+.PRICE-BOX {
+    background-color: #1b263b;
 }
 
 .PRICE-A,
@@ -212,7 +217,7 @@ img {
 
 .PRICE-B,
 .PRICE-BUTTON-A {
-    background-color: #2C2C2C;
+    background-color: #1b263b;
     color: #FFF;
 }
 
@@ -250,7 +255,7 @@ img {
     color: #dbdbdb;
     background-color: #f0f8ff14;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
 }
 
 

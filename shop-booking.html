@@ -4,102 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./src/img/logo/logo.ico">
 
-    <title>Turno online</title>
 
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- TAILWIND -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <title>Reserva tu turno</title>
+
+
+    <!-- form styles -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #09122C;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d1b2a;
+            color: #fff;
+        }
+
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background: #193fc9;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            width: 300px;
         }
 
-        h2 {
-            text-align: center;
-        }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin: 10px 0 5px;
-        }
-
-        input,
-        select,
-        button {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        select,
-        button {
+        .card {
+            display: flex;
+            background: #1b263b;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
             width: 100%;
         }
 
-        button {
-            background-color: #4caf50;
-            cursor: pointer;
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-width: 350px;
+        }
+
+        .form-section {
+            padding: 30px;
+            flex: 1;
+        }
+
+        .form-section h2 {
+            margin-top: 0;
+            font-size: 28px;
+            color: #e0e1dd;
+        }
+
+        .subtext {
+            font-size: 14px;
+            color: #a5a5a5;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #cfd8dc;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        select {
+            padding: 10px;
             border: none;
+            border-radius: 8px;
+            background: #edf2f4;
+            color: #000;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 12px;
+            background: #2ec4b6;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
         }
 
         button:hover {
-            background-color: #45a049;
+            background: #28b0a4;
         }
 
-        h4,
-        h2,
-        label,
-        button {
-            color: aliceblue;
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .image-section img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
-<body>
+<body class="
+w-screen h-screen
+flex items-center justify-center
+bg-[#09122C]">
 
     <div class="container">
-        <h2>Reservar Turno</h2>
-        <h4>Dias habiles - Lun, Mier, Vier</h4>
-        <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
-
-            <label for="phone">Teléfono:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Tu Teléfono" required>
-
-            <label for="date">Fecha:</label>
-            <input type="date" id="date" name="date" required>
-
-            <label for="time">Hora:</label>
-            <input type="time" id="time" name="time" required>
-
-            <label for="service">Servicio:</label>
-            <select id="service" name="service" required>
-                <option value="Corte de cabello">Corte de cabello</option>
-                <option value="Afeitado">Afeitado</option>
-                <option value="Corte y barba">Corte y barba (Combo)</option>
-                <option value="Tinte">Pestaña</option>
-            </select>
-
-            <button type="submit">Reservar turno</button>
-        </form>
+        <div class="card">
+            <div class="image-section">
+                <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e" alt="Barbero profesional">
+            </div>
+            <div class="form-section">
+                <h2>Reservar Turno</h2>
+                <p class="subtext">Días hábiles - Lunes, Miércoles y Viernes</p>
+                <form>
+                    <label>Nombre:
+                        <input type="text" placeholder="Tu Nombre" required>
+                    </label>
+                    <label>Teléfono:
+                        <input type="tel" placeholder="Tu Teléfono" required>
+                    </label>
+                    <label>Fecha:
+                        <input type="date" id="date" required>
+                    </label>
+                    <label>Hora:
+                        <input type="time" id="time" required>
+                    </label>
+                    <label>Servicio:
+                        <select>
+                            <option>Corte de cabello</option>
+                            <option>Afeitado</option>
+                            <option>Corte + Barba</option>
+                        </select>
+                    </label>
+                    <button type="submit">Reservar turno</button>
+                </form>
+            </div>
+        </div>
     </div>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {

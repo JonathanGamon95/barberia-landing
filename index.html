@@ -135,10 +135,11 @@
                     al detalle. Desde cortes tradicionales hasta los más vanguardistas, garantizamos una experiencia
                     única. ¡Ven y renueva tu look con nosotros!</p>
 
-                    <button id="BUTTOM-VIDEO" class="BUTTOM-VIDEO
+                <button id="BUTTOM-VIDEO" class="BUTTOM-VIDEO
                     w-[150px]
                     mx-auto sm:mx-0
-                    flex items-center justify-center gap-2"><i class="text-2xl bi bi-play-btn-fill"></i> Nuestro Salon </button>
+                    flex items-center justify-center gap-2"><i class="text-2xl bi bi-play-btn-fill"></i> Nuestro Salon
+                </button>
             </div>
 
             <!-- DESCRIPTION IMG HOME-SECTION -->
@@ -346,26 +347,31 @@
 
 
     <!-- PRICE SECTION -->
-    <section id="PRICE-SECTION" class="PRICE-SECTION">
-        <div class="
-        w-[90%] sm:max-w-[800px]
-        mx-auto py-[100px]">
-            <h1 class="TITTLE 
-            text-center">Precios que te hacen lucir bien sin gastar de mas <span class="text-4xl">💸</span></h1>
-            <br>
-            <p class="
-                text-center">Veni y aprovecha nuestras rebajas especiales, no la desaproveches !</p>
-
+    <section id="PRICE-SECTION" class="PRICE-SECTION
+    sm:h-screen
+    sm:flex items-center justify-center flex-col
+    text-2xl
+    py-[100px]">
+        <h1 class="TITTLE 
+            text-center text-xl
+            px-4 ">Precios que te hacen lucir bien sin gastar de mas <span class="text-4xl">💸</span>
+        </h1>
+        <p class="text-center text-[15px]
+        px-4 mt-4">
+            Veni y aprovecha nuestras rebajas especiales, no la desaproveches !
+        </p>
+        <div class="PRCIE-BOX
+        w-full h-auto sm:max-w-[900px]">
             <ul class="
-            flex flex-col items-center gap-4
-            sm:grid grid-cols-3 grid-rows-1
-            py-4">
+            grid grid-cols-1 grid-rows-3 sm:grid-cols-3 sm:grid-rows-1 gap-4
+            sm:h-[500px]
+            m-3">
                 <li class="PRICE-A
-                w-[100%] sm:max-w-[250px]
-                flex flex-col items-center justify-center gap-4
-                p-8
-                rounded-xl">
-                    <h1 class="TITTLE">💇‍♂️ Cabello</h1>
+                flex items-center justify-center flex-col
+                sm:h-[60%]
+                my-auto p-5 rounded-2xl">
+                    <h1 class="TITTLE flex gap-2">Cabello <img class="w-[35px]" src="./src/img/logo/31457.png"
+                            alt="logo-service"></h1>
                     <p><span class="
                         text-5xl">20</span>$</p>
 
@@ -375,19 +381,19 @@
                 </li>
 
                 <li class="PRICE-B
-                w-[100%] sm:max-w-[250px]
-                flex flex-col items-center justify-center gap-4
-                p-8
-                rounded-xl">
-                    <h1 class="TITTLE">🔥 Combo</h1>
+                flex items-center justify-center flex-col gap-2
+                sm:h-[80%]
+                my-auto p-4 rounded-2xl">
+                    <h1 class="TITTLE flex">Combo 🔥</h1>
                     <p><span class="
                         text-5xl">30</span>$</p>
 
-                    <div class="
-                        text-center">
-                        <p>Cabello</p>
-                        <p>Barba</p>
-                        <p>Pestañas</p>
+                    <div class="text-center">
+                        <div class="flex flex-col items-start">
+                            <p>Cabello</p>
+                            <p>Barba</p>
+                            <p>Pestañas</p>
+                        </div>
                     </div>
 
                     <button class="PRICE-BUTTON-B
@@ -396,11 +402,11 @@
                 </li>
 
                 <li class="PRICE-A
-                w-[100%] sm:max-w-[250px]
-                flex flex-col items-center justify-center gap-4
-                p-8
-                rounded-xl">
-                    <h1 class="TITTLE">🧔 Barba</h1>
+                flex items-center justify-center flex-col
+                sm:h-[60%]
+                my-auto p-4 rounded-2xl">
+                    <h1 class="TITTLE flex gap-2">Barba <img class="w-[35px]" src="./src/img/logo/4397805.png"
+                            alt="logo-service"></h1>
                     <p><span class="
                         text-5xl">15</span>$</p>
 
@@ -409,11 +415,6 @@
                     rounded-lg">Pedir</button>
                 </li>
             </ul>
-            <br>
-            <div class="PRICE-MORE-INFO">
-                <p class="
-                text-center sm:text-start">queres saber mas? <a class="text-[#ff4c29]" href="">clic aca</a></p>
-            </div>
         </div>
     </section>
 
@@ -443,7 +444,8 @@
                 fade-in-section
                 flex flex-col items-center justify-start gap-4
                 sm:items-start">
-                <h2 style="font-size:1.5rem; font-weight:bold;"><i class="bi bi-calendar2-week"></i> Horarios de Atención</h2>
+                    <h2 style="font-size:1.5rem; font-weight:bold;"><i class="bi bi-calendar2-week"></i> Horarios de
+                        Atención</h2>
                     <ul style="list-style:none; padding:0; line-height:1.8;">
                         <li><strong>Lunes:</strong> 9:00 - 17:00</li>
                         <li><strong>Miércoles:</strong> 9:00 - 17:00</li>
@@ -496,7 +498,7 @@
 
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="pb-8">
         <div class="
         w-screen sm:max-w-[800px]
         min-h-[200px]
@@ -581,13 +583,12 @@
     </div>
 
 
-<!-- MODAL VIDEO -->
+    <!-- MODAL VIDEO -->
     <div id="videoModal" class="modal">
         <div class="modal-content">
             <!-- <span class="close" id="closeModal">&times;</span> -->
             <button class="close" id="closeModal"><i class="bi bi-x-square-fill"></i></button>
-            <video id="videoElement" src="./src/video/istockphoto-1251555171-640_adpp_is.mp4"
-                controls>
+            <video id="videoElement" src="./src/video/istockphoto-1251555171-640_adpp_is.mp4" controls>
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta de video.
             </video>
